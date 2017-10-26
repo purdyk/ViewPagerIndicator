@@ -1,0 +1,15 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion pCompileSdkVersion
+  buildToolsVersion pBuildToolsVersion
+
+  defaultConfig {
+    minSdkVersion pMinSdkVersion
+  }
+
+  dependencies {
+    implementation project(':library')
+    implementation "com.android.support:appcompat-v7:$appCompatVersion"
+  }
+}

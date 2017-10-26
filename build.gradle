@@ -1,0 +1,25 @@
+buildscript {
+  ext {
+    pTargetSdkVersion = 24
+    pCompileSdkVersion = 24
+    pMinSdkVersion = 15
+    pBuildToolsVersion = '26.0.2'
+    appCompatVersion = '25.4.0'
+  }
+
+  repositories {
+    jcenter()
+    google()
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.0'
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Add this line
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+  }
+}

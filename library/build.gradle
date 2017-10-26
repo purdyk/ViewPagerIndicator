@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.purdyk'
+
+android {
+  compileSdkVersion pCompileSdkVersion
+  buildToolsVersion pBuildToolsVersion
+
+  defaultConfig {
+    minSdkVersion pMinSdkVersion
+  }
+
+}
+
+dependencies {
+  implementation "com.android.support:appcompat-v7:$appCompatVersion"
+}
